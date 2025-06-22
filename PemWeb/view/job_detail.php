@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Apply Pekerjaan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style2.css"> </head>
+<body>
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-light bg-light py-3">
+            <div class="container">
+                <a class="navbar-brand" href="index.php">
+                    <i class="fas fa-arrow-left me-2"></i> Lowongan Pekerjaan
+                </a>
+            </div>
+        </nav>
+        <div class="container mt-4 mb-5 content-with-bottom-nav">
+            <h5 class="text-center mb-4"><?php echo $job['company_name']; ?></h5>
+            <div class="card mb-4">
+                <div class="card-body text-center p-4">
+                    <img src="<?php echo $job['image']; ?>" alt="Logo Perusahaan" class="img-fluid" style="max-height: 200px;"> </div>
+            </div>
+            <div class="company-description mt-3">
+                <p><?php echo nl2br($job['full_description']); ?></p>
+            </div>
+            <div class="requirements-documents mt-4">
+                <h5 class="mb-3">Syarat Pelamar</h5>
+                <ul>
+                    <?php foreach ($job['requirements'] as $req): ?>
+                        <li><?php echo $req; ?></li>
+                    <?php endforeach; ?>
+                </ul>
+                <h5 class="mt-4 mb-3">Dokumen yang Harus Dilampirkan</h5>
+                <ul>
+                    <?php foreach ($job['documents'] as $doc): ?>
+                        <li><?php echo $doc; ?></li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <div class="row justify-content-center mt-4">
+                    <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+                        <div class="mb-3">
+                            <label for="inputCv" class="form-label">CV</label> <input class="form-control" type="file" id="inputCv">
+                        </div>
+                        <div class="mb-4">
+                            <label for="inputDokumenTambahan" class="form-label">Surat Lamaran Kerja</label> <input class="form-control" type="file" id="inputDokumenTambahan">
+                        </div>
+                        <div class="mb-4">
+                            <label for="inputDokumenTambahan" class="form-label">Salinan Ijazah terakhir</label> <input class="form-control" type="file" id="inputDokumenTambahan">
+                        </div>
+                        <div class="mb-4">
+                            <label for="inputDokumenTambahan" class="form-label">Salinan Transkrip Nilai</label> <input class="form-control" type="file" id="inputDokumenTambahan">
+                        </div>
+                        <div class="mb-4">
+                            <label for="inputDokumenTambahan" class="form-label">Portofolio </label> <input class="form-control" type="file" id="inputDokumenTambahan">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="tombolMenu" style="background-color: white;">
+                <button><i class="fa-solid fa-house"></i></button>
+                <button><i class="fas fa-comment"></i></button>
+                <button><i class="fa-solid fa-user"></i></button>
+            </div>
+        </nav>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

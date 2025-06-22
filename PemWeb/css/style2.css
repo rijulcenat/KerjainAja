@@ -1,0 +1,65 @@
+body {
+    background-color: #f8f9fa; 
+}
+
+.container.mt-4.mb-5 {
+    min-height: calc(100vh - 200px); 
+}
+
+.job-item {
+    overflow: hidden;
+}
+
+.content-with-bottom-nav {
+    padding-bottom: 50px; 
+}
+
+.tombolMenu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1); 
+    z-index: 1000; 
+}
+
+.tombolMenu button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 40px;
+    margin-left: 40px;
+    color: #6c757d; 
+    transition: color 0.3s ease; 
+}
+
+.tombolMenu button:hover {
+    color: #12acb1; 
+}
+
+.job-description .placeholder {
+    height: 1.2em; 
+    margin-bottom: 8px; 
+    background-color: #e9ecef; 
+    border-radius: .25rem; 
+}
+
+.form-control-lg {
+    height: calc(2.8em + .75rem + 2px); 
+    padding: .8rem .75rem; 
+    font-size: 1rem;
+}
+
+.form-text {
+    display: block; 
+    margin-top: 5px; 
+    color: #6c757d !important; 
+}
+
+.card {
+    border: 1px solid #dee2e6;
+}

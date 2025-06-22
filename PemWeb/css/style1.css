@@ -1,0 +1,117 @@
+
+        .job-card:hover {
+            transform: translateY(-5px); /* Efek angkat saat hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Efek bayangan lebih besar saat hover */
+        }
+        .job-card .company-logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%; /* Logo lingkaran */
+            object-fit: cover;
+            margin-right: 15px;
+        }
+        .job-card .job-details {
+            flex-grow: 1; /* Biarkan detail pekerjaan mengambil ruang yang tersisa */
+        }
+        .job-card .job-details h3 {
+            font-size: 1.1em;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .job-card .job-details .company-name {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        .job-card .category-badge {
+            background-color: #f0f0f0;
+            color: #555;
+            padding: 4px 8px;
+            border-radius: 5px;
+            font-size: 0.8em;
+            margin-top: 5px;
+            display: inline-block;
+        }
+
+        /* Styling for the bottom navigation (tombolMenu) */
+        .tombolMenu {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-around; /* Menyebarkan tombol secara merata */
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+            background-color: white; /* Pastikan latar belakang putih */
+            border-top-left-radius: 15px; /* Sudut melengkung atas kiri */
+            border-top-right-radius: 15px; /* Sudut melengkung atas kanan */
+        }
+        .tombolMenu button {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #6c757d;
+            transition: color 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 0.8em; /* Ukuran font lebih kecil untuk teks di bawah ikon */
+            gap: 5px; /* Jarak antara ikon dan teks */
+        }
+        .tombolMenu button i {
+            font-size: 1.5em; /* Ukuran ikon */
+        }
+        .tombolMenu button:hover {
+            color: #007bff; /* Warna hover untuk navigasi bawah */
+        }
+
+        /* Main content padding to avoid overlap with fixed bottom nav */
+        body {
+            padding-bottom: 70px; /* Sesuaikan jika tombolMenu lebih tinggi */
+        }
+
+        /* Navbar top */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #eee;
+        }
+        .navbar .logo img {
+            height: 40px; /* Sesuaikan ukuran logo */
+        }
+        .navbar .nav-links a {
+            text-decoration: none;
+            color: #007bff;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+        .navbar .nav-links a.active {
+            color: #333;
+        }
+
+        /* Main content wrapper */
+        .content-wrapper {
+            padding: 20px;
+        }
+        .main-content h1 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+            font-size: 0.9em;
+            position: relative; /* Agar footer tidak tumpang tindih jika konten pendek */
+            bottom: 0;
+            width: 100%;
+        }

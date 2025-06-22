@@ -1,0 +1,42 @@
+.judul1 {
+    margin-top: 10px;
+    text-align: center;
+}
+.foto {
+    border-radius: 50%;
+    width: 150px; 
+    height: 150px;
+    object-fit: cover;
+    align-items: center;
+}
+.cv {
+    width: 20%;  
+    max-width: 100px;  
+    height: auto;  
+}
+.judul {
+    text-align: center;
+    margin-top: 7px;
+    background: black;
+    color: white;
+    padding: 7px
+}
+.btn {
+    margin-bottom: 70px;
+}
+.icon {
+    background: none;
+    border: none;
+    font-size: 24px;
+}
+.kotak {
+    background-color: rgb(196, 194, 191);
+    padding-top: 10px;
+    padding-bottom: 25px;
+    border-radius: 5px;
+}
+.subab {
+    background: white;
+    text-align: left;
+    padding: 10px 0px 10px 5px; 
+}
